@@ -8,7 +8,7 @@ namespace ExtraRoles
 {
     public static class Configs
     {
-        public static bool Enable;
+        public static bool extrarolesenable;
         public static List<int> d9341itms;
         public static List<int> scp181items;
         public static int d9341spawnChance;
@@ -18,7 +18,7 @@ namespace ExtraRoles
         public static int scp181LuckyNumber;
         public static void Reload()
         {
-           Enable = Qurre.Plugin.Config.GetBool("Enable");
+           extrarolesenable = Qurre.Plugin.Config.GetBool("extra_roles_enable");
            d9341itms = Qurre.Plugin.Config.GetIntList("d9341items");
             d9341spawnChance = Qurre.Plugin.Config.GetInt("d9341spawnChance", 20);
             d9341minplys = Qurre.Plugin.Config.GetInt("d9341minplys", 20);
